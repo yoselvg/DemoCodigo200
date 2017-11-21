@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DemoCodigo200"
+             x:Class="DemoCodigo200.MainPage"
+             Padding="20,20,20,20">
+    <StackLayout>
+        <Label x:Name="LabelTitle" VerticalOptions="Center" 
+           HorizontalOptions="Center" FontSize="Small"/>
+        <Image Aspect="AspectFit">
+            <Image.Source>
+                <OnPlatform x:TypeArguments="ImageSource"
+                    iOS="codigo200.png"
+                    Android="codigo200.png"
+                    WinPhone="Assets/codigo200.png" />
+            </Image.Source>
+        </Image>
+    </StackLayout>
+</ContentPage>
